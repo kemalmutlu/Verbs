@@ -22,18 +22,18 @@
       <tbody>
         <?php
     	$listCount = 5;
-        $count = 0;
-	$viewCount = 0;
-        $ifadeler = file('ifadeler.txt');
-	$total = 0;
-	if(isset($_GET["page"])){ $pageCount = $_GET["page"] * $listCount - $listCount; }else{ $pageCount = 0; }
+      $count = 0;
+	    $viewCount = 0;
+      $ifadeler = file('ifadeler.txt');
+	    $total = 0;
+	     if(isset($_GET["page"])){ $pageCount = $_GET["page"] * $listCount - $listCount; }else{ $pageCount = 0; }
           foreach ($ifadeler as $ifade) {
-		$total++;
+		          $total++;
 
-          list($i1,$i2,$i3) = explode(" " , $ifade);
+          list($i1,$i2,$i3) = explode("\t" , $ifade);
           $count+=1;
-	  if($pageCount < $count && $viewCount < $listCount){
-	  $viewCount++;
+	     if($pageCount < $count && $viewCount < $listCount){
+	         $viewCount++;
           ?>
         <tr>
           <th scope="row"><?=$count;?></th>
@@ -52,9 +52,16 @@
   <div class="row">
   <?php
 $process = $total / $listCount;
+
 for($i = 1; $i < $process + 1; $i++){
+  if($_GET['page'] == $i){
+    echo '<a class="btn btn-success m-1" href="Irregular.php?page='.$i.'" role="button">'.$i.'</a>';
+  } else {
+    echo '<a class="btn btn-primary m-1" href="Irregular.php?page='.$i.'" role="button">'.$i.'</a>';
+  }
+
 ?>
-    <a class="btn btn-primary m-1" href="Irregular.php?page=<?=$i?>" role="button"><?=$i?></a>
+
   <?php } ?>
   </div>
 

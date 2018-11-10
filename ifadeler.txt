@@ -1,9 +1,9 @@
-arise arose arisen
+arise	arose	arisen
 awake 	awoke 	awoken
 be 	was/were 	been
 bear 	bore 	born(e)
 beat 	beat 	beaten
-become  became 	become
+become	became	become
 begin 	began 	begun
 bend 	bent 	bent
 bet 	bet 	bet
@@ -19,7 +19,7 @@ build 	built 	built
 burn 	burnt/burned 	burnt/burned
 burst 	burst 	burst
 buy 	bought 	bought
-can 	could 	… (been able)
+can 	could 	...been_able
 catch 	caught 	caught
 choose 	chose 	chosen
 cling 	clung 	clung
@@ -120,7 +120,7 @@ stink 	stank 	stunk
 strike 	struck 	struck
 swear 	swore 	sworn
 sweep 	swept 	swept
-swell 	swelled 	swollen/swelled
+swell 	swelled	swollen/swelled
 swim 	swam 	swum
 swing 	swung 	swung
 take 	took 	taken
