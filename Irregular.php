@@ -50,11 +50,11 @@
 
 <div class="container">
   <div class="row">
-  <?php 
+  <?php
 $process = $total / $listCount;
 for($i = 1; $i < $process + 1; $i++){
 ?>
-    <a class="btn btn-primary m-1" href="Irregular.php?page=<?page=<?=$i?>" role="button"><?=$i?></a>
+    <a class="btn btn-primary m-1" href="Irregular.php?page=<?=$i?>" role="button"><?=$i?></a>
   <?php } ?>
   </div>
 
