@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <title>Programlama Dilleri</title>
+    <title>Verbs</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
