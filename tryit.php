@@ -35,12 +35,12 @@
 
           if ($_POST['try'] == $a || $_POST['try'] == $b)
           {
-            print("doğru oç");
+            print("doğru");
             header("Refresh:1");
           }
           else
           {
-            echo "yalış amcık" . $a . $b ;
+            echo "yalış" . $a . $b ;
             header("Refresh:1");
           }
         }

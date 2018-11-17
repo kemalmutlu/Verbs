@@ -30,14 +30,26 @@
 //echo HarfCagir("a");
 
 ?>
-</table>
+
   <?php
-    for($i='A';$i<'Z';$i++) {
-      echo '<button href="Irregular.php" class="btn btn-primary m-1">'.$i.'</button>';
-    }
+
+
+foreach(range('A', 'Z') as $a){
+  echo '<a href="Irregular.php?harf='.$a.'" class="btn btn-lg btn-primary m-1">'.$a.'</a>';
+
+}
+if(isset($_GET['harf']))
+{
+  echo HarfCagir(strtolower($_GET['harf']));
+
+}
+else {
+
+
+
 
   ?>
-
+</table>
 
 
   </div>
@@ -56,9 +68,9 @@
       </thead>
 
 
-
         <?php
 
+      }
         if ( isset($_GET['page'])=='')
         {
           $_GET['page']=1;
@@ -96,12 +108,13 @@
            if(!isset($_GET['search'])){
 
            ?>
-        <tr>
+
+        <!-- <tr>
           <th scope="row"><?=$total;?></th>
           <td><?php echo $i1; ?></td>
           <td><?php echo $i2; ?></td>
           <td><?php echo $i3; ?></td>
-        </tr>
+        </tr> -->
       <?php } }
         } ?>
       </tbody>

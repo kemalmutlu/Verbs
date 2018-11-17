@@ -3,14 +3,16 @@
 function HarfCagir($harf)
 {
   $harfler = file('ifadeler.txt');
-  $arr =  "";
+  $count =  0;
+
   foreach ($harfler as $val) {
-      if(strtolower(substr($val,0,1) == $harf))
+      if(substr($val,0,1) == $harf)
       {
+        $count++;
          list($a,$b,$c) = explode(',' , $val);
          echo '
          <tr>
-           <th scope="row">'.'</th>
+           <th scope="row">'.$count.'</th>
            <td>'.$a.'</td>
            <td>'.$b.'</td>
            <td>'.$c.'</td>
