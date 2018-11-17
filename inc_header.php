@@ -23,16 +23,37 @@
             <a class="nav-link" href="index.php">Home Page <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Regular Verbs</a>
+            <a class="nav-link" href="tryit.php">Try It</a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" href="Irregular.php">Irregular Verbs</a>
           </li>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        <form class="form-inline my-2 my-lg-0" method="get">
+
+          <input class="form-control mr-sm-2" name="search" type="search" placeholder="Search" aria-label="Search">
+          <a class="btn btn-outline-success my-2 my-sm-0" href="Irregular.php" type="submit">Search</a>
         </form>
       </div>
 </nav>
+<?php
+
+if ( isset($_GET["search"]) )
+{
+  if (!strpos($_SERVER['REQUEST_URI'],'Irregular.php'))
+  {
+
+    header("Location: Irregular.php?". $_SERVER['QUERY_STRING']);
+
+    /*
+      Burada muhtemelen inc_header.php sayfası irregular.php içersinde'de olduğundan başka sayfalardan gönderilen data tekrar irreguler.php içerisnde çalışıypr
+      biz burada eğer sayfa irregular php değilse yönlendire yapktık.Diğer türlü irregular.php içersinde zaten bu işlem yapılacak.
+    */
+  }
+
+}
+
+
+
+?>

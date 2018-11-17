@@ -1,4 +1,4 @@
-<footer class="container-fluid bg-light">
+<footer class="container-fluid bg-light mt-5">
           <p style="text-align:center;">Regular and Irregular Verbs</p>
     </footer>
 
