@@ -14,15 +14,7 @@
 
 <div class="container mt-5">
   <div class="row">
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Base Form</th>
-          <th scope="col">Past Simple (V2)</th>
-          <th scope="col">Past Participle (V3)</th>
-        </tr>
-      </thead>
+
 
 
 <?php
@@ -40,6 +32,16 @@ foreach(range('A', 'Z') as $a){
 }
 if(isset($_GET['harf']))
 {
+  echo '  <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Base Form</th>
+          <th scope="col">Past Simple (V2)</th>
+          <th scope="col">Past Participle (V3)</th>
+        </tr>
+      </thead>';
+
   echo HarfCagir(strtolower($_GET['harf']));
 
 }
@@ -106,16 +108,16 @@ else {
 
 	         $viewCount++;
            if(!isset($_GET['search'])){
-
+             if(isset($_GET['harf'])==""){
            ?>
 
-        <!-- <tr>
+        <tr>
           <th scope="row"><?=$total;?></th>
           <td><?php echo $i1; ?></td>
           <td><?php echo $i2; ?></td>
           <td><?php echo $i3; ?></td>
-        </tr> -->
-      <?php } }
+        </tr>
+      <?php } } }
         } ?>
       </tbody>
     </table>
@@ -126,7 +128,7 @@ else {
 <div class="container">
   <div class="row">
   <?php
-
+if(isset($_GET['harf']) == "") {
 $process = $total / $listCount;
 for($i = 1; $i < $process + 1; $i++){
   if($_GET['page'] == $i){
@@ -134,8 +136,7 @@ for($i = 1; $i < $process + 1; $i++){
   } else {
     echo '<a class="btn btn-primary m-1" href="Irregular.php?page='.$i.'" role="button">'.$i.'</a>';
   }
-
-
+}
 
 ?>
 
