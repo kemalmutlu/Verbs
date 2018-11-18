@@ -1,5 +1,5 @@
 # Katkıda Bulunanlar
 
-## Erdem Yıldız : https://github.com/ErdemStar
+### Erdem Yıldız : https://github.com/ErdemStar
 
-## Abdül Baki : github.com/yazilimalanlari
+### Abdül Baki : github.com/yazilimalanlari
