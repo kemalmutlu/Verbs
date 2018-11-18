@@ -32,7 +32,7 @@
           $oku = file("Word-Status.txt");
           list($a,$b) = explode("," , $oku[0]);
 
-          if ($_POST['try'] == $a || $_POST['try'] == $b)
+            if ($_POST['try'] == trim($a) || $_POST['try'] == trim($b))
           {
             echo '<div class="alert alert-success" role="alert">
                   Doğru

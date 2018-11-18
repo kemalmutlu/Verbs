@@ -24,7 +24,7 @@
             <a class="nav-link" href="index.php">Home Page <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="tryit.php">Try It</a>
+            <a class="nav-link" href="Exercises.php">Exercises</a>
           </li>
 
           <li class="nav-item">

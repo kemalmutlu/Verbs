@@ -28,23 +28,20 @@
 
           $oku = file("Word-Status.txt");
           list($a,$b) = explode("," , $oku[0]);
-
-          if ($_POST['try'] == $a || $_POST['try'] == $b)
-          {
+          if(isset($_POST['try']) && $_POST['try'] == trim($a) or isset($_POST['try']) && $_POST['try'] == trim($b))  {
             echo '<div class="alert alert-success" role="alert">
                   Doğru
                  </div>';
-            header("Refresh:1.3");
+            header('Refresh:1');
+          }  else
+            {
+              echo "<div class='alert alert-danger' role='alert'>
+                    Yanlış $a $b
+                   </div>";
+                  header('Refresh:1');
+                echo $_POST['try'];
+            }
           }
-          else
-          {
-            echo "<div class='alert alert-danger' role='alert'>
-                  Yanlış $a $b
-                 </div>";
-            header("Refresh:1.3");
-          }
-        }
-
         ?>
 
 
