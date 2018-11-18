@@ -1,6 +1,3 @@
-<?php require "inc_header.php"; ?>
-
-
 <div class="container mt-5">
   <div class="row">
     <form action="<?php $_PHP_SELF ?>" method="post">
@@ -64,6 +61,3 @@
     </form>
   </div>
 </div>
-
-
-<?php require "inc_footer.php"; ?>
