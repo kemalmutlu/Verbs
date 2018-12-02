@@ -1,1 +1,1 @@
-bit,bitten
+bought,bought

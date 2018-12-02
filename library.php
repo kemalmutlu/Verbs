@@ -31,7 +31,7 @@ function ara($aranan)
             foreach ($ifadeler as $ifade)
             {
                 list($a,$b,$c) = explode(",",$ifade);
-                if($a == $tmp)
+                if($a == $tmp or $b == $tmp or $c == $tmp)
                 {
                   $status = true;
                   echo '

@@ -1,0 +1,8 @@
+shake|2|My dog jumped out of the swimming pool and {} himself, causing water to spray everywhere.
+saw|3|You should have {} Trish’s face when she got her surprise.
+spend|2|We {} the whole day lounging on the beach.
+take|1|Let’s {} a hike on Saturday.
+leave|2|My brother Mike {} his stinky socks on the coffee table. 
+throw|3|This is the ninth time that pitcher has {} a foul ball.
+burst|1|The water balloon {} when it hit its target.
+stick|2|Jesse intentionally {} gum in Jeff’s hair.

@@ -1,0 +1,8 @@
+shake,shook,shaken
+saw,had seen,seen
+spend,spent,had spend
+take,took,taken
+leave,left,leaving
+throw,threw,thrown
+burst,busted,broken
+stick,stuck,sticky
