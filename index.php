@@ -5,7 +5,7 @@
     <div class="col-md-4">
       <div class="card" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">What Are Irregular Verbs?</h5>
+          <h5 class="card-title">What are irregular verbs?</h5>
           <p class="card-text">Irregular verbs are verbs that don’t take on the regular –d, -ed, or -ied spelling patterns of the past simple (V2) or past participle (V3). Many of the irregular V2 and V3 forms are the same, such as: cut – cut, had – had, let – let, hurt – hurt, fed- fed, sold-sold.</p>
           <a href="Irregular.php" class="btn btn-primary">Irregular Verbs List</a>
         </div>
